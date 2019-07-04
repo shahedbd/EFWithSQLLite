@@ -1,0 +1,41 @@
+﻿
+Install-Package Microsoft.EntityFrameworkCore -Version 2.2.4
+Install-Package Microsoft.EntityFrameworkCore -Version 2.2.0
+
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 2.1.4
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.1.4
+
+Install-Package Microsoft.EntityFrameworkCore.Sqlite -Version 2.1.4
+
+SQL Lite Browser:
+https://sqlitebrowser.org/dl/
+
+
+
+Notes:
+
+#First step:
+Go to Package Manager Console:
+Add-Migration InitialCreate
+Update-Database
+
+
+#After update DB Contex-01
+Add-Migration 1stUpdate
+Update-Database
+
+#After update DB Contex-02
+Add-Migration 2ndUpdate
+Update-Database
+
+To be continue
+
+CMD: 
+Add-Migration
+Drop-Database
+Get-DbContext
+Scaffold-DbContext
+Script-Migrations
+Update-Database
+
